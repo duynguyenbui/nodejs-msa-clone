@@ -35,7 +35,7 @@ model Listing {
   updatedAt      DateTime         @updatedAt
   updatedBy      Int
   capacity       Json
-  Category       Category?        @relation(fields: [categoryId], references: [id])
+  category       Category?        @relation(fields: [categoryId], references: [id])
   categoryId     Int?
   listingPrice   ListingPrice[]
   listingAmenity ListingAmenity[]
